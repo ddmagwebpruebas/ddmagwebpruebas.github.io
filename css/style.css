@@ -1,0 +1,203 @@
+/* ESTILOS GENERALES */
+:root{
+    --via-white: #FFFFFF;
+    --btn-wp: #25d366;
+}
+
+.bg-light{
+    background-color: var(--via-white)!important;
+}
+
+a:hover{ 
+    text-decoration: none; 
+}
+
+a.navbar-brand small{
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 15px 26px;
+    min-width: 160px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+nav{
+    min-height: 5rem;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* BTN WHATSAPP */
+.float{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: var(--btn-wp);
+	color: var(--via-white);
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+}
+
+.float:hover {
+	text-decoration: none;
+	color: var(--btn-wp);
+	background-color: var(--via-white);
+}
+
+.my-float{
+	margin-top: 16px;
+}
+
+/*Team*/
+#features .card {
+    background: var(--via-white);
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    width: 100%;
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 250px;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/**/
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: dodgerblue;
+}
+
+/******
+    Diseño adaptable a dispositivos móviles 
+******/
+
+@media (max-width: 575.98px) { 
+
+    *{text-align: center;}
+
+    .py-6{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .w-75, .btn{
+        width: 100% !important;
+    }
+
+    h1.display-4{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .display-1,
+    .display-2,
+    h2.display-4,
+    .display-3,
+    .display-5{
+        font-size: 2.0rem !important;
+        text-align: center;
+    }
+    
+    p{text-align: center;}
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+@media (min-width: 1200px) { }
